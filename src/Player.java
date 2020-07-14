@@ -13,7 +13,7 @@ public class Player {
 
     public void die(){
         if(lifes > 0){
-            setLifes(getLifes() - 1);
+            lifes--;
         }
         if(lifes == 0){
             System.out.println("Perdiste wey\n" +
@@ -27,7 +27,7 @@ public class Player {
     }
 
     public void comprobacion(int x){
-        if(x != getNumAleatorio()){
+        if(x != numAleatorio){
             die();
             aviso(x);
         }else{
